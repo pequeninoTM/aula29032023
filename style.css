@@ -1,0 +1,44 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto {
+    width: 300px;
+    animation: left 2s infinite alternate;
+    position: relative;
+}
+
+img {
+    width: 300px;
+    position: relative;
+    animation: up 2s infinite alternate;
+    border-radius: 50%;
+}
+
+@keyframes up {
+    from {
+        top: 0px;
+        opacity: 1;
+    }
+
+    to {
+        top: 200px;
+        opacity: 0;
+    }
+}
+
+@keyframes left {
+    from {
+        right: 0px;
+        opacity: 1;
+    }
+
+    to {
+        right: 200px;
+        opacity: 0;
+    }
+}
